@@ -44,16 +44,20 @@ Two simple ways to use:
  
 *Method 1:*
 
+<pre><code>
     //Route.php
     Router::parseExtensions('pdf');
 
     //Controller or AppController   
     $components = array('RequestHandler', 'WkHtmlToPdf.WkHtmlToPdf');
+</code></pre>
 
 *Method 2:*
 
+<pre><code>
     //In your action
     $this->view = 'WkHtmlToPdf.WkHtmlToPdf';
+</code></pre>
 
 h2. License
 
