@@ -1,0 +1,78 @@
+h1. WkHtmlToPdf Plugin
+
+A wrapper view class to allow easy use of WkHtmlToPdf with CakePHP applications
+
+h2. Background
+
+WkHtmlToPdf is the least suckiest HTML to PDF converter, and there needs to be an easy to use CakePHP view class for it.
+
+h2. Requirements
+
+* CakePHP 1.3
+* WkHtmlToPdf (http://code.google.com/p/wkhtmltopdf/)
+
+h2. Installation
+
+_[Manual]_
+
+# Download this: http://github.com/dakota/wk_html_to_pdf/zipball/master
+# Unzip that download.
+# Copy the resulting folder to app/plugins
+
+_[GIT Submodule]_
+
+In your app directory type:
+<pre><code>git submodule add git://github.com/dakota/wk_html_to_pdf.git plugins/wk_html_to_pdf
+git submodule init
+git submodule update
+</code></pre>
+
+_[GIT Clone]_
+
+In your plugin directory type
+<pre><code>git clone git://github.com/dakota/wk_html_to_pdf.git wk_html_to_pdf</code></pre>
+
+_[WkHtmlToPdf]_
+
+* Goto http://code.google.com/p/wkhtmltopdf/
+* Download the version for your server
+* Put the binary in /usr/bin (by default), call it _wkhtmltopdf_
+
+h2. Usage
+
+Two simple ways to use:
+ 
+*Method 1:*
+
+    //Route.php
+    Router::parseExtensions('pdf');
+
+    //Controller or AppController   
+    $components = array('RequestHandler', 'WkHtmlToPdf.WkHtmlToPdf');
+
+*Method 2:*
+
+    //In your action
+    $this->view = 'WkHtmlToPdf.WkHtmlToPdf';
+
+h2. License
+
+Copyright (c) 2011 Walther Lalk
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
