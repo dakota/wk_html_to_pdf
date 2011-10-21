@@ -131,6 +131,22 @@
 		}
 
 		/**
+		 * @brief public interface for setting options
+		 * 
+		 * This is a basic setter method for setting options from external sources
+		 * 
+		 * @access public
+		 * 
+		 * @param string $key Key to set
+		 * @param mixed $value Value to set
+		 * 
+		 * @return nothing
+		 */
+		public function setOption($key, $value) {
+			$this->options[$key] = $value;
+		}
+		
+		/**
 		 * @brief public interface for rendering pdfs
 		 * 
 		 * This is the render method that will be called by cake as per normal 
