@@ -13,6 +13,8 @@ h2. Requirements
 
 h2. Installation
 
+h3. Plugin installation
+
 _[Manual]_
 
 # Download this: http://github.com/dakota/wk_html_to_pdf/zipball/master
@@ -32,10 +34,10 @@ _[GIT Clone]_
 In your plugin directory type
 <pre><code>git clone git://github.com/dakota/wk_html_to_pdf.git wk_html_to_pdf</code></pre>
 
-_[WkHtmlToPdf]_
+h3. Wkhtmltopdf binary installation
 
 * Goto http://code.google.com/p/wkhtmltopdf/
-* Download the version for your server
+* Download the static binary (*wkhtmltopdf-version-static...* - 32bit or 64bit)
 * Put the binary in /usr/bin (by default), call it _wkhtmltopdf_
 
 h2. Usage
