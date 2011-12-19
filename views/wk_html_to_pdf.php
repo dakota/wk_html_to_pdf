@@ -172,6 +172,13 @@
 				$this->options['title'] = $this->getVar('title_for_layout');
 			}
 
+			if(!is_executable($this->options['binary'])) {
+				throw new Exception($this->options['binary'] . ' is not executable.');
+			}
+
+			if(!function_exists('proc_open')) {
+				throw new Exception('Settings on the server prevent shell commands from being executed.');
+			}
 
 			$filename = $this->options['filename'];
 			switch($this->options['mode']) {
