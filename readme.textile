@@ -1,6 +1,6 @@
 h1. WkHtmlToPdf Plugin
 
-A wrapper view class to allow easy use of WkHtmlToPdf with CakePHP applications
+A wrapper view class to allow easy use of WkHtmlToPdf with CakePHP 1.3 applications. If you need support for CakePHP 2.x, use https://github.com/ceeram/CakePdf
 
 h2. Background
 
