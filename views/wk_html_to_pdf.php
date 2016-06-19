@@ -230,7 +230,7 @@
 					break;
 				
 				default:
-					throw new Exception("Mode: " . $mode . " is not supported");
+					throw new Exception("Mode: " . $this->options['mode'] . " is not supported");
 			}
 
 			$filepath = $this->outputFile;
